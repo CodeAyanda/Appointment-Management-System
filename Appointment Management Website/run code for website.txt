@@ -1,0 +1,9 @@
+Running code:
+1. Open M3 folder
+2. Open M3.csproj (C# project file)
+
+*Databases have been disabled by the university since the year is almost over. Running private pages causes errors due to the database being disabled.
+The code for all pages is available and the layout can be viewed using the designer. 
+Code for private pages is in the 'Private' folder.
+Code for reports is in the 'Reports' folder.
+

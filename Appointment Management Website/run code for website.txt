@@ -1,4 +1,5 @@
 Running code:
+Download M3 and Packages folders to the same directory.
 1. Open M3 folder
 2. Open M3.csproj (C# project file)
 

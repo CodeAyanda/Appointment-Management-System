@@ -1,2 +1,5 @@
+Running code:
+Download RoughEx folder
+
 1. Open RoughEx folder.
 2. Open RoughEx.csproj (C# project)

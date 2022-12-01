@@ -1,0 +1,2 @@
+1. Open RoughEx folder.
+2. Open RoughEx.csproj (C# project)

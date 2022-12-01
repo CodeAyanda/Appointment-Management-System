@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF7F0708-11B7-4F50-B5D3-F5874EBBFB21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RoughEx</RootNamespace>
+    <AssemblyName>RoughEx</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADDCLIENT.CS">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDCLIENT.Designer.CS">
+      <DependentUpon>ADDCLIENT.CS</DependentUpon>
+    </Compile>
+    <Compile Include="AddPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPC.Designer.cs">
+      <DependentUpon>AddPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelAppointment.Designer.cs">
+      <DependentUpon>CancelAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClientReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientReport.Designer.cs">
+      <DependentUpon>ClientReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupWst15DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupWst15DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoices.Designer.cs">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoicesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicesRDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoicesRDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentReport.Designer.cs">
+      <DependentUpon>PaymentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PCDS.cs">
+      <DependentUpon>PCDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PCDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PCDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PCReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCReport.Designer.cs">
+      <DependentUpon>PCReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SAADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SAADD.Designer.cs">
+      <DependentUpon>SAADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SADS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SADS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SearchClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchClient.Designer.cs">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPestController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPestController.Designer.cs">
+      <DependentUpon>SearchPestController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceADS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceADS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceAppointmentDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceAppointmentDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAppt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAppt.Designer.cs">
+      <DependentUpon>UpdateAppt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateClient.Designer.cs">
+      <DependentUpon>UpdateClient.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADDCLIENT.resx">
+      <DependentUpon>ADDCLIENT.CS</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPC.resx">
+      <DependentUpon>AddPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelAppointment.resx">
+      <DependentUpon>CancelAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientReport.resx">
+      <DependentUpon>ClientReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices.resx">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentReport.resx">
+      <DependentUpon>PaymentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCReport.resx">
+      <DependentUpon>PCReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAADD.resx">
+      <DependentUpon>SAADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchClient.resx">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPestController.resx">
+      <DependentUpon>SearchPestController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAppt.resx">
+      <DependentUpon>UpdateAppt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateClient.resx">
+      <DependentUpon>UpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClientDS.xsc">
+      <DependentUpon>ClientDS.xsd</DependentUpon>
+    </None>
+    <None Include="ClientDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClientDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClientDS.xss">
+      <DependentUpon>ClientDS.xsd</DependentUpon>
+    </None>
+    <None Include="GroupWst15DataSet1.xsc">
+      <DependentUpon>GroupWst15DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GroupWst15DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupWst15DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GroupWst15DataSet1.xss">
+      <DependentUpon>GroupWst15DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="InvoicesDS.xsc">
+      <DependentUpon>InvoicesDS.xsd</DependentUpon>
+    </None>
+    <None Include="InvoicesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoicesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InvoicesDS.xss">
+      <DependentUpon>InvoicesDS.xsd</DependentUpon>
+    </None>
+    <None Include="InvoicesRDS.xsc">
+      <DependentUpon>InvoicesRDS.xsd</DependentUpon>
+    </None>
+    <None Include="InvoicesRDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoicesRDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InvoicesRDS.xss">
+      <DependentUpon>InvoicesRDS.xsd</DependentUpon>
+    </None>
+    <None Include="PCDS.xsc">
+      <DependentUpon>PCDS.xsd</DependentUpon>
+    </None>
+    <None Include="PCDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PCDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PCDS.xss">
+      <DependentUpon>PCDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SADS.xsc">
+      <DependentUpon>SADS.xsd</DependentUpon>
+    </None>
+    <None Include="SADS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SADS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SADS.xss">
+      <DependentUpon>SADS.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceADS.xsc">
+      <DependentUpon>ServiceADS.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceADS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServiceADS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ServiceADS.xss">
+      <DependentUpon>ServiceADS.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceAppointmentDS.xsc">
+      <DependentUpon>ServiceAppointmentDS.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceAppointmentDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServiceAppointmentDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ServiceAppointmentDS.xss">
+      <DependentUpon>ServiceAppointmentDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
